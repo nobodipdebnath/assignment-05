@@ -8,30 +8,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav class="bg-[#F9F7F3]">
-        <div class="flex justify-around py-3">
-            <div>
-                <a href="" class="btn bg-[#B4F461] text-xl font-semibold text-[#111111]">Blog
-                </a>
+    <nav class="relative">
+        <div class=" fixed top-0 left-0 right-0 backdrop-blur-xl">
+            <div class="flex justify-around py-3 bg-[#F9F7F3]">
+                <div>
+                    <a href="" class="btn bg-[#B4F461] text-xl font-semibold text-[#111111]">Blog
+                    </a>
+                </div>
+                <div class="flex justify-center items-center">
+                    <a href="" class="flex items-center gap-1 text-xl font-semibold text-[#111111]">
+                        <img class="h-auto w-[30px]" src="../image/logo.png" alt="">Donate Bangladesh
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="flex items-center gap-1 text-xl text-[#111111B3] font-semibold">
+                        <img src="../image/coin.png" alt="">5500 BDT</a>
+                </div>
             </div>
-            <div class="flex justify-center items-center">
-                <a href="" class="flex items-center gap-1 text-xl font-semibold text-[#111111]">
-                    <img class="h-auto w-[30px]" src="../image/logo.png" alt="">Donate Bangladesh
-                </a>
-            </div>
-            <div>
-                <a href="" class="flex items-center gap-1 text-xl text-[#111111B3] font-semibold">
-                    <img src="../image/coin.png" alt="">5500 BDT</a>
-            </div>
+            <section class="">
+                <div class="flex justify-center gap-2 mt-2 pb-8 ">
+                    <button class="btn bg-[#B4F461] text-xl font-semibold text-[#111111]">Donation</button>
+                    <button class="btn text-xl text-[#111111B3] font-semibold"><a href="html/history.html">History</a></button>
+                </div>
+            </section>
         </div>
     </nav>
     <main class="container mx-auto">
         <section>
-            <div class="flex justify-center gap-2 mt-20">
-                <button class="btn text-xl font-semibold text-[#111111B3]"><a href="../index.html">Donation</a></button>
-                <button class="btn text-xl text-[#111111] font-semibold bg-[#B4F461]">History</button>
-            </div>
-            <div class="p-8 border rounded-2xl mt-8 mb-6">
+            <div class="p-8 border rounded-2xl mt-[160px] mb-6">
                 <h2 class="text-xl text-[#111111] font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
                 <p class="text-[#111111B3] mt-4">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
             </div>
@@ -45,5 +49,6 @@
             </div>
         </section>
     </main>
+    <script src="../js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="relative">
+        <div class="">
+            <div class="flex justify-around py-3 bg-[#F9F7F3]">
+                <div>
+                    <a href="" class="btn bg-[#B4F461] text-xl font-semibold text-[#111111]" id="home-btn">Home
+                    </a>
+                </div>
+                <div class="flex justify-center items-center">
+                    <a href="" class="flex items-center gap-1 text-xl font-semibold text-[#111111]">
+                        <img class="h-auto w-[30px]" src="../image/logo.png" alt="">Donate Bangladesh
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="flex items-center gap-1 text-xl text-[#111111B3] font-semibold">
+                        <img src="../image/coin.png" alt="">5500 BDT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1 class="text-center text-5xl text-[#111111] font-bold mt-5">
+            Our Blog Section
+        </h1>
+        <p class="text-center font-semibold text-gray-400 mt-4">
+            A “blog” is an updated version of the old term “weblog,” used to describe 
+            websites that maintain an ongoing chronicle of information. A blog features 
+            diary-type <br> commentary and links to articles on other websites, usually 
+            presented as a list of entries in reverse chronological order.
+        </p>
+        <div class="container mx-auto mt-20 ">
+            <div tabindex="0" class="collapse mb-5 collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">Can you explain what the Document Object Model (DOM) is and its core functions?</div>
+                <div class="collapse-content">
+                    <p>
+                        The Document Object Model (DOM) is a programming interface for HTML
+                        and XML documents. It represents the structure of a document as a 
+                        tree-like model, allowing developers to manipulate its content and 
+                        visual presentation. The DOM’s core functions include creating, 
+                        reading, updating, and deleting nodes. Nodes represent elements, 
+                        attributes, and text within the document. By manipulating these 
+                        nodes, developers can dynamically change content and styles. For 
+                        instance, JavaScript often uses the DOM API to interact with HTML 
+                        elements in web development.
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse mb-5 collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model?</div>
+                <div class="collapse-content">
+                  <p>A platform for web development </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse mb-5 collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">How would you manipulate the DOM using JavaScript?</div>
+                <div class="collapse-content">
+                  <p>JavaScript manipulates the DOM by selecting elements and changing 
+                    their properties or contents. The ‘document’ object is used to access
+                    the HTML document, with methods like getElementById() or querySelector() 
+                    for selection. Once an element is selected, its attributes can be changed 
+                    using dot notation. For example, if we have a paragraph with id “demo”, 
+                    we could change its text content as follows:
+                    <br>
+                    <br>
+                    let para = document.getElementById("demo");
+                    para.textContent = "New Text";</p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse mb-5 collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">How do you select individual elements in DOM using JavaScript?</div>
+                <div class="collapse-content">
+                  <p>In JavaScript, individual elements in the DOM can be selected using 
+                    various methods. The most common are ‘getElementById’, ‘getElementsByClassName’, 
+                    and ‘getElementsByTagName’.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/index.js"></script>
+</body>
+</html>
