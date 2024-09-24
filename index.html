@@ -27,14 +27,17 @@
             </div>
             <section class="">
                 <div class="flex justify-center gap-2 mt-2 pb-8 ">
-                    <button class="btn bg-[#B4F461] text-xl font-semibold text-[#111111]">Donation</button>
-                    <button class="btn text-xl text-[#111111B3] font-semibold"><a href="html/history.html">History</a></button>
+                    <button id="display-donation" class="btn bg-[#B4F461] text-xl font-semibold text-[#111111]">Donation</button>
+                    <button id="display-history" class="btn text-xl  font-semibold">History</a></button>
                 </div>
             </section>
         </div>
     </nav>
     <main class="container mx-auto">
-        <section class="pb-20">
+        <section id="history-section" class="mt-[160px] hidden">
+            <h1>Nobodip Debnath</h1>
+        </section>
+        <section id="donation-section" class="pb-20">
             <div class="grid grid-cols-2 gap-8 p-8 border rounded-2xl mt-[160px]">
                 <div>
                     <img class="w-full h-[390px]" src="image/noakhali.png" alt="">
@@ -189,6 +192,7 @@
             </div>
         </section>
     </main>
+    <script src="js/library.js"></script>
     <script src="js/home.js"></script>
 </body>
 </html> 
