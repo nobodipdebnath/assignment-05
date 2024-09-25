@@ -32,7 +32,9 @@ document
       </div>
       `
       document.getElementById('history-section').appendChild(card);
-      
+
+      alert('You Donation has SuccessFull! Thank You ..')
+
     }
   });
 document
@@ -63,6 +65,7 @@ document
       </div>
       `
       document.getElementById('history-section').appendChild(card);
+      alert('You Donation has SuccessFull! Thank You ..')
     }
   });
 document
@@ -76,6 +79,7 @@ document
 
     if (isNaN(amount) || amount <= 0 || amount > currentBalanceNumber) {
       alert("Please try again !");
+      document.getElementById('my_modal_5').Close();
     } else {
       const donateAmount = document.getElementById("donate-amount3").innerText;
       const newDonateAmount =
@@ -92,6 +96,7 @@ document
       </div>
       `
        document.getElementById('history-section').appendChild(card);
+       alert('You Donation has SuccessFull! Thank You ..')
     }
   });
 document
@@ -121,6 +126,7 @@ document
       </div>
       `
        document.getElementById('history-section').appendChild(card);
+       alert('You Donation has SuccessFull! Thank You ..')
     }
   });
 document
@@ -149,7 +155,9 @@ document
         <p class="text-[#111111B3] mt-2">${'Date : ' + Date()}</p>
       </div>
       `
-       document.getElementById('history-section').appendChild(card);
+      document.getElementById('history-section').appendChild(card);
+      alert('You Donation has SuccessFull! Thank You ..')
+
     }
   });
 document
@@ -179,6 +187,7 @@ document
       </div>
       `
        document.getElementById('history-section').appendChild(card);
+       alert('You Donation has SuccessFull! Thank You ..')
     }
   });
 
@@ -191,9 +200,7 @@ document
 
     document.getElementById("display-history").classList.add("bg-[#B4F461]");
 
-    document
-      .getElementById("display-donation")
-      .classList.remove("bg-[#B4F461]");
+    document.getElementById("display-donation").classList.remove("bg-[#B4F461]");
   });
 
 document
@@ -207,3 +214,5 @@ document
 
     document.getElementById("display-donation").classList.add("bg-[#B4F461]");
   });
+
+
