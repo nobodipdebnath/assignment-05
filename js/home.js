@@ -3,7 +3,6 @@ document.getElementById("blog-btn").addEventListener("click", function (event) {
   window.location.href = "blog.html";
 });
 
-
 document
   .getElementById("donate-btn")
   .addEventListener("click", function (event) {
@@ -15,8 +14,7 @@ document
 
     if (isNaN(amount) || amount <= 0 || amount > currentBalanceNumber) {
       alert("Something Wrong . Please try again !");
-    }
-    else {
+    } else {
       const donateAmount = balance("donate-amount");
       const newDonateAmount =
         parseFloat(inputAmount) + parseFloat(donateAmount);
@@ -24,17 +22,18 @@ document
       const newCurrentAmount = currentBalanceNumber - parseFloat(inputAmount);
       document.getElementById("current-balance").innerText = newCurrentAmount;
 
-      const card = document.createElement('card');
-      card.innerHTML+=`
+      const card = document.createElement("card");
+      card.innerHTML += `
         <div class="p-4 border-2 rounded-2xl mt-8">
-        <h1 class="text-xl text-[#111111] font-bold">${amount + '  Taka is Donated for famine-2024 at Feni, Bangladesh'}</h1>
-        <p class="text-[#111111B3] mt-2">${'Date : ' + Date()}</p>
+        <h1 class="text-xl text-[#111111] font-bold">${
+          amount + "  Taka is Donated for famine-2024 at Feni, Bangladesh"
+        }</h1>
+        <p class="text-[#111111B3] mt-2">${"Date : " + Date()}</p>
       </div>
-      `
-      document.getElementById('history-section').appendChild(card);
+      `;
+      document.getElementById("history-section").appendChild(card);
 
-      alert('You Donation has SuccessFull! Thank You ..')
-
+      alert("You Donation has SuccessFull! Thank You ..");
     }
   });
 document
@@ -56,16 +55,17 @@ document
       const newCurrentAmount = currentBalanceNumber - parseFloat(inputAmount);
       document.getElementById("current-balance").innerText = newCurrentAmount;
 
-
-      const card=document.createElement('card');
-      card.innerHTML+=`
+      const card = document.createElement("card");
+      card.innerHTML += `
          <div class="p-4 border-2 rounded-2xl mt-8">
-        <h1 class="text-xl text-[#111111] font-bold">${amount + '  Taka is Donated for famine-2024 at Feni, Bangladesh'}</h1>
-        <p class="text-[#111111B3] mt-2">${'Date : ' + Date()}</p>
+        <h1 class="text-xl text-[#111111] font-bold">${
+          amount + "  Taka is Donated for famine-2024 at Feni, Bangladesh"
+        }</h1>
+        <p class="text-[#111111B3] mt-2">${"Date : " + Date()}</p>
       </div>
-      `
-      document.getElementById('history-section').appendChild(card);
-      alert('You Donation has SuccessFull! Thank You ..')
+      `;
+      document.getElementById("history-section").appendChild(card);
+      alert("You Donation has SuccessFull! Thank You ..");
     }
   });
 document
@@ -79,7 +79,7 @@ document
 
     if (isNaN(amount) || amount <= 0 || amount > currentBalanceNumber) {
       alert("Please try again !");
-      document.getElementById('my_modal_5').Close();
+      document.getElementById("my_modal_5").Close();
     } else {
       const donateAmount = document.getElementById("donate-amount3").innerText;
       const newDonateAmount =
@@ -88,15 +88,17 @@ document
       const newCurrentAmount = currentBalanceNumber - parseFloat(inputAmount);
       document.getElementById("current-balance").innerText = newCurrentAmount;
 
-      const card=document.createElement('card');
-      card.innerHTML+=`
+      const card = document.createElement("card");
+      card.innerHTML += `
          <div class="p-4 border-2 rounded-2xl mt-8">
-        <h1 class="text-xl text-[#111111] font-bold">${amount + '  Aid for Injured in the Quota Movement'}</h1>
-        <p class="text-[#111111B3] mt-2">${'Date : ' + Date()}</p>
+        <h1 class="text-xl text-[#111111] font-bold">${
+          amount + "  Aid for Injured in the Quota Movement"
+        }</h1>
+        <p class="text-[#111111B3] mt-2">${"Date : " + Date()}</p>
       </div>
-      `
-       document.getElementById('history-section').appendChild(card);
-       alert('You Donation has SuccessFull! Thank You ..')
+      `;
+      document.getElementById("history-section").appendChild(card);
+      alert("You Donation has SuccessFull! Thank You ..");
     }
   });
 document
@@ -118,15 +120,17 @@ document
       const newCurrentAmount = currentBalanceNumber - parseFloat(inputAmount);
       document.getElementById("current-balance").innerText = newCurrentAmount;
 
-      const card=document.createElement('card');
-      card.innerHTML+=`
+      const card = document.createElement("card");
+      card.innerHTML += `
          <div class="p-4 border-2 rounded-2xl mt-8">
-        <h1 class="text-xl text-[#111111] font-bold">${amount + '  Aid for Injured in the Quota Movement,Dhaka'}</h1>
-        <p class="text-[#111111B3] mt-2">${'Date : ' + Date()}</p>
+        <h1 class="text-xl text-[#111111] font-bold">${
+          amount + "  Aid for Injured in the Quota Movement,Dhaka"
+        }</h1>
+        <p class="text-[#111111B3] mt-2">${"Date : " + Date()}</p>
       </div>
-      `
-       document.getElementById('history-section').appendChild(card);
-       alert('You Donation has SuccessFull! Thank You ..')
+      `;
+      document.getElementById("history-section").appendChild(card);
+      alert("You Donation has SuccessFull! Thank You ..");
     }
   });
 document
@@ -148,16 +152,17 @@ document
       const newCurrentAmount = currentBalanceNumber - parseFloat(inputAmount);
       document.getElementById("current-balance").innerText = newCurrentAmount;
 
-      const card=document.createElement('card');
-      card.innerHTML+=`
+      const card = document.createElement("card");
+      card.innerHTML += `
          <div class="p-4 border-2 mt-8 rounded-2xl">
-        <h1 class="text-xl text-[#111111] font-bold">${amount + '  Donate for Flood Relief in Noakhali,Bangladesh'}</h1>
-        <p class="text-[#111111B3] mt-2">${'Date : ' + Date()}</p>
+        <h1 class="text-xl text-[#111111] font-bold">${
+          amount + "  Donate for Flood Relief in Noakhali,Bangladesh"
+        }</h1>
+        <p class="text-[#111111B3] mt-2">${"Date : " + Date()}</p>
       </div>
-      `
-      document.getElementById('history-section').appendChild(card);
-      alert('You Donation has SuccessFull! Thank You ..')
-
+      `;
+      document.getElementById("history-section").appendChild(card);
+      alert("You Donation has SuccessFull! Thank You ..");
     }
   });
 document
@@ -179,15 +184,17 @@ document
       const newCurrentAmount = currentBalanceNumber - parseFloat(inputAmount);
       document.getElementById("current-balance").innerText = newCurrentAmount;
 
-      const card=document.createElement('card');
-      card.innerHTML+=`
+      const card = document.createElement("card");
+      card.innerHTML += `
          <div class="p-4 border-2 rounded-2xl mt-8">
-        <h1 class="text-xl text-[#111111] font-bold">${amount + '  Donate for Flood Relief in Cadpur,Bangladesh'}</h1>
-        <p class="text-[#111111B3] mt-2">${'Date : ' + Date()}</p>
+        <h1 class="text-xl text-[#111111] font-bold">${
+          amount + "  Donate for Flood Relief in Cadpur,Bangladesh"
+        }</h1>
+        <p class="text-[#111111B3] mt-2">${"Date : " + Date()}</p>
       </div>
-      `
-       document.getElementById('history-section').appendChild(card);
-       alert('You Donation has SuccessFull! Thank You ..')
+      `;
+      document.getElementById("history-section").appendChild(card);
+      alert("You Donation has SuccessFull! Thank You ..");
     }
   });
 
@@ -200,7 +207,9 @@ document
 
     document.getElementById("display-history").classList.add("bg-[#B4F461]");
 
-    document.getElementById("display-donation").classList.remove("bg-[#B4F461]");
+    document
+      .getElementById("display-donation")
+      .classList.remove("bg-[#B4F461]");
   });
 
 document
@@ -214,5 +223,3 @@ document
 
     document.getElementById("display-donation").classList.add("bg-[#B4F461]");
   });
-
-
